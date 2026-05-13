@@ -25,7 +25,7 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build -t jayadharani2006/aws-cicd:${{ github.sha }} .
-          docker tag jayadharani2006/aws-cicd:${{ github.sha }} atomcodex/aws-cicd:latest
+          docker tag jayadharani2006/aws-cicd:${{ github.sha }} jayadharani2006/aws-cicd:latest
 
       - name: Push Docker Images
         run: |
